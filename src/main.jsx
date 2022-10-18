@@ -12,8 +12,10 @@ const theme = createTheme({
     }
   },
   typography: {
-    fontFamily: "'Montserrat', sans-serif",
-    color: 'white'
+    allVariants: {
+      fontFamily: "'Montserrat', sans-serif",
+      color: "white",
+    }
   },
 });
 

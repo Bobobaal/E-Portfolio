@@ -66,7 +66,13 @@ export default function NavBar() {
       <Collapse in={open} timeout="auto" unmountOnExit>
         <List id="mobileNav-list" component="div" disablePadding sx={{ borderTop: '1px solid black', backgroundColor: '#A30000', display: { xs: 'flex', md: 'none' } }}>
           <ListItemButton sx={{ pl: 4 }} >
-            <ListItemText id="mobileNav-text">Lol</ListItemText>
+            <ListItemText id="mobileNav-text">Home</ListItemText>
+          </ListItemButton>
+          <ListItemButton sx={{ pl: 4 }} >
+            <ListItemText id="mobileNav-text">Projecten</ListItemText>
+          </ListItemButton>
+          <ListItemButton sx={{ pl: 4 }} >
+            <ListItemText id="mobileNav-text">CV</ListItemText>
           </ListItemButton>
         </List>
       </Collapse>
