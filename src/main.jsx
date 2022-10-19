@@ -1,9 +1,9 @@
-import { ThemeProvider, createTheme } from '@mui/material'
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import { BrowserRouter } from 'react-router-dom'
-import App from './App'
-import './Style/style.css'
+import { ThemeProvider, createTheme } from '@mui/material';
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { BrowserRouter } from 'react-router-dom';
+import App from './App';
+import './Style/style.css';
 
 const theme = createTheme({
   palette: {
@@ -27,4 +27,4 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       </ThemeProvider>
     </BrowserRouter>
   </React.StrictMode>
-)
+);

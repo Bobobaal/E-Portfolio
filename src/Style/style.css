@@ -3,14 +3,33 @@ body {
   background-color: #1D1D1D !important;
 }
 
-.title .title-decor {
-  padding: 10px;
-  border-radius: 10px;
-  color: white;
+/*
+In text: #00B9CB
+In footer: #8FFFFF 
+a {
+  color: #00B9CB;
+}
+*/
+@media (min-width: 1500px) {
+  .MuiContainer-root {
+    max-width: 1500px !important;
+  }
+}
+h4 {
+  font-size: 2.3rem !important;
+  padding-left: 10px !important;
+  border-left: 5px inset #a30000;
+}
+
+.underLineTitle {
+  border-color: #a30000;
+  border-width: 5px;
 }
 
 .aboutMeText {
   font-size: 18px !important;
+  text-align: justify;
+  margin: 0px 10px !important;
 }
 
 #navbar {

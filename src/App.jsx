@@ -1,9 +1,9 @@
-import { Routes, Route, Navigate } from "react-router-dom"
-import ScrollToTop from "./Components/ScrollToTop"
-import AboutMe from "./Pages/AboutMe"
-import NavBar from './Components/NavBar'
+import { Routes, Route, Navigate } from "react-router-dom";
+import ScrollToTop from "./Components/ScrollToTop";
+import AboutMe from "./Pages/AboutMe";
+import NavBar from './Components/NavBar';
 
-function App() {
+export default function App() {
   return (
     <>
       <ScrollToTop />
@@ -14,7 +14,5 @@ function App() {
         <Route path="*" element={<Navigate to="/home" />} />
       </Routes>
     </>
-  )
+  );
 }
-
-export default App
