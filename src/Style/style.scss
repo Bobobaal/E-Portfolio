@@ -2,13 +2,60 @@ body {
   margin: 0;
   background-color: #1D1D1D !important;
 }
-/*
-In text: #00B9CB
-In footer: #8FFFFF 
-a {
-  color: #00B9CB;
+
+
+#navbar {
+  text-transform: uppercase;
+  position: static;
+
+  #navbar-naam {
+    letter-spacing: 1px;
+    margin-right: 16px;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  #navbar-menuIcoon {
+    color: white;
+  }
+
+  .MuiListItemText-primary {
+    font-weight: bold;
+  }
 }
-*/
+
+.mobileNav-Button > .MuiListItemButton-root{
+  padding: 0px!important;
+}
+
+.MuiListItemButton-root.mobileNav-listItem:hover{
+  background-color:#a30000;
+}
+
+.MuiListItemButton-root.mobileNav-listItem{
+  border-top: 1px solid black;
+  background-color:#a30000;
+  padding: 8px 28px;
+  .MuiListItemText-primary{
+    font-weight: 550;
+  }
+}
+
+@media (min-width: 600px){
+  .MuiListItemButton-root.mobileNav-listItem{
+    padding: 8px 36px;
+  }
+}
+
+.selfie {
+  width: 225px;
+  height: 225px;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
 
 @media (min-width: 1500px){
   .MuiContainer-root{
@@ -33,40 +80,35 @@ h4{
   margin: 0px 10px!important;
 }
 
-#navbar {
-  text-transform: uppercase;
-  position: static;
-
-  #navbar-naam {
-    letter-spacing: 1px;
-    margin-right: 16px;
-    font-size: 20px;
-    text-decoration: none;
-    font-weight: bold;
+#footerBox{
+  background-color: #a30000;
+  margin-top: 50px;
+  h5{
+    font-size: 1.7rem;
   }
-
-  #navbar-menuIcoon {
+  ul{
+    list-style-type: none;
+    font-family: 'Montserrat',sans-serif;
     color: white;
+    padding: 0px;
+    font-size: 18px;
+    font-weight: 400;
+    li{
+      a {
+        color: #8FFFFF!important;
+        text-decoration-line: none;
+      }
+    }
   }
-
-  .MuiListItemText-primary {
-    font-weight: bold;
-  }
 }
 
-#mobileNav-text {
-  font-size: 14px;
-  color: white;
+/*
+In text: #00B9CB
+In footer: #8FFFFF 
+a {
+  color: #00B9CB;
 }
-
-.selfie {
-  width: 225px;
-  height: 225px;
-  border-radius: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-}
+*/
 
 /* +++++ Scrollbar +++++ */
 

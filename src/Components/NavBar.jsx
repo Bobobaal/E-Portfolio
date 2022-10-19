@@ -1,7 +1,7 @@
 import { Menu as MenuIcon } from "@mui/icons-material";
 import {
   AppBar, Toolbar, Box, IconButton, Stack,
-  Typography, List, ListItemIcon, ListItemText, ListItemButton, Collapse
+  Typography, List, ListItemIcon, ListItemText, ListItemButton, Collapse, Container
 } from "@mui/material";
 import { useCallback, useState } from "react";
 
@@ -16,15 +16,15 @@ export default function NavBar() {
   return (
     <>
       <AppBar id="navbar">
-        <Toolbar disableGutters>
+        <Toolbar component={Container}>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             <List component={Stack} direction="row" spacing={1}>
-              <ListItemButton>
+              <ListItemButton component="a" href="./home">
                 <ListItemText>
                   Home
                 </ListItemText>
               </ListItemButton>
-              <ListItemButton>
+              <ListItemButton  component="a" href="./projecten">
                 <ListItemText>
                   Projecten
                 </ListItemText>
@@ -37,7 +37,7 @@ export default function NavBar() {
             </List>
           </Box>
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
-            <List>
+            <List className="mobileNav-Button">
               <ListItemButton onClick={handleClick} disableRipple={true}>
                 <ListItemIcon>
                   <IconButton
@@ -64,15 +64,15 @@ export default function NavBar() {
         </Toolbar>
       </AppBar>
       <Collapse in={open} timeout="auto" unmountOnExit>
-        <List id="mobileNav-list" component="div" disablePadding sx={{ borderTop: '1px solid black', backgroundColor: '#A30000', display: { xs: 'flex', md: 'none' } }}>
-          <ListItemButton sx={{ pl: 4 }} >
-            <ListItemText id="mobileNav-text">Home</ListItemText>
+        <List component={Stack} direction="column" disablePadding sx={{ display: { xs: 'flex', md: 'none' } }}>
+          <ListItemButton className="mobileNav-listItem">
+            <ListItemText>Home</ListItemText>
           </ListItemButton>
-          <ListItemButton sx={{ pl: 4 }} >
-            <ListItemText id="mobileNav-text">Projecten</ListItemText>
+          <ListItemButton className="mobileNav-listItem">
+            <ListItemText>Projecten</ListItemText>
           </ListItemButton>
-          <ListItemButton sx={{ pl: 4 }} >
-            <ListItemText id="mobileNav-text">CV</ListItemText>
+          <ListItemButton className="mobileNav-listItem">
+            <ListItemText>CV</ListItemText>
           </ListItemButton>
         </List>
       </Collapse>

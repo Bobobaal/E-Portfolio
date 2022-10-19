@@ -3,13 +3,55 @@ body {
   background-color: #1D1D1D !important;
 }
 
-/*
-In text: #00B9CB
-In footer: #8FFFFF 
-a {
-  color: #00B9CB;
+#navbar {
+  text-transform: uppercase;
+  position: static;
 }
-*/
+#navbar #navbar-naam {
+  letter-spacing: 1px;
+  margin-right: 16px;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+#navbar #navbar-menuIcoon {
+  color: white;
+}
+#navbar .MuiListItemText-primary {
+  font-weight: bold;
+}
+
+.mobileNav-Button > .MuiListItemButton-root {
+  padding: 0px !important;
+}
+
+.MuiListItemButton-root.mobileNav-listItem:hover {
+  background-color: #a30000;
+}
+
+.MuiListItemButton-root.mobileNav-listItem {
+  border-top: 1px solid black;
+  background-color: #a30000;
+  padding: 8px 28px;
+}
+.MuiListItemButton-root.mobileNav-listItem .MuiListItemText-primary {
+  font-weight: 550;
+}
+
+@media (min-width: 600px) {
+  .MuiListItemButton-root.mobileNav-listItem {
+    padding: 8px 36px;
+  }
+}
+.selfie {
+  width: 225px;
+  height: 225px;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
 @media (min-width: 1500px) {
   .MuiContainer-root {
     max-width: 1500px !important;
@@ -32,38 +74,34 @@ h4 {
   margin: 0px 10px !important;
 }
 
-#navbar {
-  text-transform: uppercase;
-  position: static;
+#footerBox {
+  background-color: #a30000;
+  margin-top: 50px;
 }
-#navbar #navbar-naam {
-  letter-spacing: 1px;
-  margin-right: 16px;
-  font-size: 20px;
-  text-decoration: none;
-  font-weight: bold;
+#footerBox h5 {
+  font-size: 1.7rem;
 }
-#navbar #navbar-menuIcoon {
+#footerBox ul {
+  list-style-type: none;
+  font-family: "Montserrat", sans-serif;
   color: white;
+  padding: 0px;
+  font-size: 18px;
+  font-weight: 400;
 }
-#navbar .MuiListItemText-primary {
-  font-weight: bold;
-}
-
-#mobileNav-text {
-  font-size: 14px;
-  color: white;
-}
-
-.selfie {
-  width: 225px;
-  height: 225px;
-  border-radius: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
+#footerBox ul li a {
+  color: #8FFFFF !important;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
 }
 
+/*
+In text: #00B9CB
+In footer: #8FFFFF 
+a {
+  color: #00B9CB;
+}
+*/
 /* +++++ Scrollbar +++++ */
 /* width */
 ::-webkit-scrollbar {
