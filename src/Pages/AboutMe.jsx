@@ -1,7 +1,7 @@
 import { Container, Grid, Box } from "@mui/material";
-import Education from "../Components/Education";
-import FreeTime from "../Components/FreeTime";
-import WhoAmI from "../Components/WhoAmI";
+import Education from "../Components/AboutMe/Education";
+import FreeTime from "../Components/AboutMe/FreeTime";
+import WhoAmI from "../Components/AboutMe/WhoAmI";
 
 export default function AboutMe() {
   return (

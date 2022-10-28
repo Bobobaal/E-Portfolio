@@ -1,6 +1,6 @@
 import { Grid, Typography } from "@mui/material"
 import { faUserGraduate } from '@fortawesome/free-solid-svg-icons';
-import Title from './Title';
+import Title from '../General/Title';
 
 export default function Education(){
   return (

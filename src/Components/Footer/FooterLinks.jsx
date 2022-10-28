@@ -8,7 +8,7 @@ export default function FooterLinks() {
       <Grid item xs={6}>
         <Typography variant="h6" sx={{ fontWeight: "bold" }}>MIJN LINKS:</Typography>
         <ul>
-          <li><a href="https://github.com/Bobobaal/" target="_blank"><FontAwesomeIcon icon={faSquareGithub} /> Github</a></li>
+          <li><a href="https://github.com/Bobobaal/" target="_blank"><FontAwesomeIcon icon={faSquareGithub} /> Persoonlijke Github</a></li>
           <li><a href="in.com/in/dieter-van-meerbeeck-a738a6160/" target="_blank"><FontAwesomeIcon icon={faLinkedin} /> LinkedIn</a></li>
         </ul>
       </Grid>

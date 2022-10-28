@@ -5,9 +5,9 @@ import AboutMe from "./Pages/AboutMe";
 import Projecten from "./Pages/Projecten";
 
 //Components
-import ScrollToTop from "./Components/ScrollToTop";
-import NavBar from './Components/NavBar';
-import Footer from "./Components/Footer";
+import ScrollToTop from "./Components/General/ScrollToTop";
+import NavBar from './Components/General/NavBar';
+import Footer from "./Components/Footer/Footer";
 
 export default function App() {
   return (

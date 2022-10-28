@@ -1,7 +1,7 @@
 import { Grid, Typography } from "@mui/material";
 import { faCircleUser } from '@fortawesome/free-regular-svg-icons';
 import { useMemo } from "react";
-import Title from "./Title"
+import Title from '../General/Title';
 
 export default function WhoAmI() {
   const getLeeftijd = useMemo(() => {
