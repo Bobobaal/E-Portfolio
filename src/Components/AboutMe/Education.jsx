@@ -7,7 +7,7 @@ export default function Education(){
     <>
       <Title icon={faUserGraduate} text="Opleiding" />
       <Grid item xs>
-        <Typography className="aboutMeText">
+        <Typography className="text">
           Ik ben afgestudeerd aan het GO! Lyceum Gent in de richting informaticabeheer. 
           Op de proclamatie heb ik van de school een beloning gekregen voor het helpen van mijn klasgenoten bij hun GIP project. 
           Omdat ik mijn klasgenoten hielp, hebben ze mijn bijnaam ingesteld als PHP-Helpdesk in de Facebook messenger groep. 

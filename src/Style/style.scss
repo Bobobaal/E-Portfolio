@@ -15,6 +15,7 @@ body {
 
 .inhoud{
   flex-grow: 1;
+  margin-top: 15px;
 }
 
 #navbar {
@@ -80,7 +81,6 @@ body {
 }
 
 h4 {
-  font-size: 2.3rem !important;
   padding-left: 10px !important;
   border-left: 5px inset #a30000;
 }
@@ -90,10 +90,24 @@ h4 {
   border-width: 5px;
 }
 
-.aboutMeText {
+.text {
   font-size: 18px !important;
   text-align: justify;
-  margin: 0px 10px !important;
+  margin: 0px 10px 10px 10px!important;
+  a {
+    color: #00B9CB
+  }
+}
+
+.subtitle{
+  border-left-color: #a30000;
+  border-left-width: 5px;
+  border-left-style: inset;
+  padding-left: 10px;
+}
+
+.underlineSubtitle{
+  border-color: #a30000;
 }
 
 #footerBox {
@@ -122,14 +136,6 @@ h4 {
     }
   }
 }
-
-/*
-In text: #00B9CB
-In footer: #8FFFFF 
-a {
-  color: #00B9CB;
-}
-*/
 
 /* +++++ Scrollbar +++++ */
 
