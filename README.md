@@ -6,4 +6,12 @@ TODO:
 - ~~Footer~~
 - ~~Homepagina~~
 - Projecten pagina
+  - ~~GIP Camping~~
+  - Mastermind
+  - Arrowverse watchlist
+  - Oude E-Portfolio
+  - Frontend Project
+  - Webservices/backend project
+  - Fluvius Projecten 2
+  - EWD SprintBoot project
 - CV pagina
