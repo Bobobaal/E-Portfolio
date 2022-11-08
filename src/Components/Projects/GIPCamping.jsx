@@ -1,29 +1,24 @@
-import { Grid, Link, Typography } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 import Title from "../General/Title";
 import Subtitle from "../General/Subtitle";
 import { faTent } from "@fortawesome/free-solid-svg-icons";
+import GithubLink from "../General/GithubLink";
 
 export default function GIPCamping(){
   return (
     <>
-      <Grid item xs>
+      <Grid item className="pageComponent">
         <Title icon={faTent} text="Camping Le Passage (GIP opdracht, laatste jaar secundair)" />
-        <Grid item xs>
-          <Subtitle text="Wat is een GIP?"/>
-        </Grid>
-        <Grid item xs>
+        <Subtitle text="Wat is een GIP?"/>
+        <Grid item>
           <Typography className="text">
             Een GIP of geïntegreerde proef maakt deel uit van de examens in het laatste jaar van het secundair. 
             Het is een opdracht die men moet maken die zich strekt over de verschillende vakken die aan bod komen in de studierichting. 
             Op het einde van het jaar wordt het geheel van het project beoordeeld. 
-            Dat is zodat de leerling kan bewijzen dat die zelfstandig een opdracht in zijn/haar vakgebied kan afleveren. 
+            Dat is zodat de leerling kan bewijzen dat die zelfstandig een opdracht in hun vakgebied kan afleveren. 
             Een GIP wordt beoordeeld door niet alleen leerkrachten, maar ook een externe jury die het vakgebied in praktijk uitoefenen.
           </Typography>
-        </Grid>
-        <Grid item xs>
           <Subtitle text="Waar ging mijn GIP over?" />
-        </Grid>
-        <Grid item xs>
           <Typography className="text">
             Mijn GIP ging over camping Le Passage en dat is een camping waar ik tijdens de vakantie verbleef in een caravan die mijn ouders daar gekocht hebben. 
             Ze hebben 2 verschillende soorten plaatsen, een sta- of trekplaats en een plaats waar de vaste caravans op staan die de mensen daar gekocht hebben. 
@@ -37,7 +32,7 @@ export default function GIPCamping(){
             Dit wordt allemaal gedaan met de hulp van PHP en MySQL. 
             Omdat er MySQL gebruikt is konden de mensen ook hun eigen informatie aanpassen voor als ze ooit zouden verhuizen of wanneer ze een ander e-mailadres zouden hebben. 
             Ook konden ze een overzicht krijgen van hun reserveringen en als men het wil, ze konden die ook aanpassen of annuleren als er dingen tussen kwamen.<br />
-            Link naar de Github repo van dit project met de code & screenshots: <Link href="https://github.com/Bobobaal/GIP-Camping-2017" target="_blank" rel="noopener" underline="hover">GIP Camping Le Passage</Link>
+            <GithubLink url="https://github.com/Bobobaal/GIP-Camping-2017" text="GIP Camping Le Passage" />
           </Typography>
         </Grid>
       </Grid>

@@ -9,7 +9,8 @@ const theme = createTheme({
   palette: {
     primary: {
       main: '#A30000',
-    }
+    },
+    mode: "dark",
   },
   typography: {
     allVariants: {

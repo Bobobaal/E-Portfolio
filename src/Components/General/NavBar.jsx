@@ -19,17 +19,17 @@ export default function NavBar() {
         <Toolbar component={Container}>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             <List component={Stack} direction="row" spacing={1}>
-              <ListItemButton component="a" href="./home">
+              <ListItemButton className="navBar-listItem" component="a" href="./home">
                 <ListItemText>
                   Home
                 </ListItemText>
               </ListItemButton>
-              <ListItemButton  component="a" href="./projecten">
+              <ListItemButton className="navBar-listItem" component="a" href="./projecten">
                 <ListItemText>
                   Projecten
                 </ListItemText>
               </ListItemButton>
-              <ListItemButton>
+              <ListItemButton className="navBar-listItem">
                 <ListItemText>
                   CV
                 </ListItemText>
@@ -65,10 +65,10 @@ export default function NavBar() {
       </AppBar>
       <Collapse in={open} timeout="auto" unmountOnExit>
         <List component={Stack} direction="column" disablePadding sx={{ display: { xs: 'flex', md: 'none' } }}>
-          <ListItemButton className="mobileNav-listItem">
+          <ListItemButton className="mobileNav-listItem" component="a" href="./home">
             <ListItemText>Home</ListItemText>
           </ListItemButton>
-          <ListItemButton className="mobileNav-listItem">
+          <ListItemButton className="mobileNav-listItem" component="a" href="./projecten">
             <ListItemText>Projecten</ListItemText>
           </ListItemButton>
           <ListItemButton className="mobileNav-listItem">

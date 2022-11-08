@@ -1,4 +1,4 @@
-import { Grid, Typography } from "@mui/material";
+import { Grid, Typography, Box } from "@mui/material";
 import { faCircleUser } from '@fortawesome/free-regular-svg-icons';
 import { useMemo } from "react";
 import Title from '../General/Title';
@@ -17,8 +17,9 @@ export default function WhoAmI() {
 
   return (
     <>
-      <Title icon={faCircleUser} text="Wie ben ik?" />
-      <Grid item xs>
+      <Grid item className="pageComponent">
+        <Title icon={faCircleUser} text="Wie ben ik?" />
+        <div className="fullWidthUnder550"><Box component="img" src="./img/profielfoto.jpg" alt="foto van mijzelf" className="selfie"/></div>
         <Typography className="text">
           Hallo, mijn naam is Dieter Van Meerbeeck en ben geboren op 14 december 1998 ({getLeeftijd} jaar).
           Ik studeer Toegepaste Informatica: Enterprise & Web Development (professionele bachelor) aan de Hogeschool van Gent (HoGent).
@@ -31,7 +32,6 @@ export default function WhoAmI() {
           Ik heb toen gekozen voor de workshop html en vond het zo interessant dat ik thuis verder begon te experimenteren, toen besloot ik dat ik informaticabeheer zou volgen in het 5de en 6de secundair.
           Eenmaal in het 5de secundair begon ik ook interesse te krijgen in programmeren, maar mijn grootste passie blijft webdesign.
         </Typography>
-        <br />
       </Grid>
     </>
   );

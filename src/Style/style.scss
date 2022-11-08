@@ -1,3 +1,5 @@
+/* +++++ Generieke layout pagina's +++++ */
+
 html, body{
   height:100%
 }
@@ -9,6 +11,7 @@ body {
 
 #root {
   min-height: 100%;
+  min-width: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -18,11 +21,25 @@ body {
   margin-top: 15px;
 }
 
+@media (min-width: 1500px) {
+  .MuiContainer-root {
+    max-width: 1500px !important;
+  }
+}
+
+/* +++++ Navbar +++++ */
+
 #navbar {
   text-transform: uppercase;
   position: static;
   flex-grow: 0;
   flex-shrink: 0;
+  background-color: #a30000;
+  background-image: none;
+
+  .navBar-listItem:hover{
+    background-color: rgba(0, 0, 0, 0.04);
+  }
 
   #navbar-naam {
     letter-spacing: 1px;
@@ -65,50 +82,68 @@ body {
   }
 }
 
+/* +++++ Generieke opmaak tekst +++++ */
+
+.pageComponent {
+  margin-bottom: 12px!important;
+  h4 {
+    padding-left: 10px !important;
+    border-left: 5px inset #a30000;
+  }
+  
+  .underLineTitle {
+    border-color: #a30000;
+    border-width: 5px;
+  }
+  
+  .text {
+    font-size: 18px !important;
+    //text-align: justify;
+    margin: 0px 10px 10px 10px!important;
+    a {
+      color: #00B9CB
+    }
+    ul {
+      padding-left: 18px;
+      margin: 5px 0px;
+    }
+  }
+  
+  .subtitle{
+    border-left-color: #a30000;
+    border-left-width: 5px;
+    border-left-style: inset;
+    padding-left: 10px;
+  }
+  
+  .underlineSubtitle{
+    border-color: #a30000;
+  }
+}
+
+/* +++++ AboutMe Pagina +++++ */
+
 .selfie {
   width: 225px;
   height: 225px;
   border-radius: 50%;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 10px;
+  margin-right: 10px;
   display: block;
+  float:left;
 }
 
-@media (min-width: 1500px) {
-  .MuiContainer-root {
-    max-width: 1500px !important;
+@media (max-width: 549px){
+  .fullWidthUnder550 {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    margin-bottom: 10px;
   }
 }
 
-h4 {
-  padding-left: 10px !important;
-  border-left: 5px inset #a30000;
-}
 
-.underLineTitle {
-  border-color: #a30000;
-  border-width: 5px;
-}
-
-.text {
-  font-size: 18px !important;
-  text-align: justify;
-  margin: 0px 10px 10px 10px!important;
-  a {
-    color: #00B9CB
-  }
-}
-
-.subtitle{
-  border-left-color: #a30000;
-  border-left-width: 5px;
-  border-left-style: inset;
-  padding-left: 10px;
-}
-
-.underlineSubtitle{
-  border-color: #a30000;
-}
+/* +++++ Footer +++++ */
 
 #footerBox {
   background-color: #a30000;
