@@ -1,3 +1,5 @@
+$primaire_kleur: #a30000;
+
 /* +++++ Generieke layout pagina's +++++ */
 
 html, body{
@@ -34,7 +36,7 @@ body {
   position: static;
   flex-grow: 0;
   flex-shrink: 0;
-  background-color: #a30000;
+  background-color: $primaire_kleur;
   background-image: none;
 
   .navBar-listItem:hover{
@@ -63,12 +65,12 @@ body {
 }
 
 .MuiListItemButton-root.mobileNav-listItem:hover {
-  background-color: #a30000;
+  background-color: $primaire_kleur;
 }
 
 .MuiListItemButton-root.mobileNav-listItem {
   border-top: 1px solid black;
-  background-color: #a30000;
+  background-color: $primaire_kleur;
   padding: 8px 28px;
 
   .MuiListItemText-primary {
@@ -88,11 +90,11 @@ body {
   margin-bottom: 12px!important;
   h4 {
     padding-left: 10px !important;
-    border-left: 5px inset #a30000;
+    border-left: 5px inset $primaire_kleur;
   }
   
   .underLineTitle {
-    border-color: #a30000;
+    border-color: $primaire_kleur;
     border-width: 5px;
   }
   
@@ -110,14 +112,14 @@ body {
   }
   
   .subtitle{
-    border-left-color: #a30000;
+    border-left-color: $primaire_kleur;
     border-left-width: 5px;
     border-left-style: inset;
     padding-left: 10px;
   }
   
   .underlineSubtitle{
-    border-color: #a30000;
+    border-color: $primaire_kleur;
   }
 }
 
@@ -146,7 +148,7 @@ body {
 /* +++++ Footer +++++ */
 
 #footerBox {
-  background-color: #a30000;
+  background-color: $primaire_kleur;
   margin-top: 50px;
   flex-grow: 0;
   flex-shrink: 0;
@@ -186,11 +188,11 @@ body {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background-color: #a30000;
+  background-color: $primaire_kleur;
   border-color: #ba0000;
 
   :hover {
-    background-color: #a30000;
+    background-color: $primaire_kleur;
     border-color: #ba0000;
   }
 }

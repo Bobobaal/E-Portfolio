@@ -7,7 +7,7 @@ import GithubLink from "../General/GithubLink";
 export default function Mastermind(){
   return (
     <>
-      <Grid item xs className="pageComponent">
+      <Grid item className="pageComponent">
         <Title icon={faPuzzlePiece} text="Mastermind (Projecten 1)" />
         <Subtitle text="Wat is Mastermind en hoe speel je het?" />
         <Grid item>
@@ -60,6 +60,7 @@ export default function Mastermind(){
               Je kan het spel spelen in zowel console als in de GUI (Grafische User Interface)
             </li>
           </ul>
+          Dit is een groepsproject gemaakt met 2 andere studenten. <br />
           <GithubLink url="https://github.com/Bobobaal/Mastermind-Projecten1" text="Mastermind projecten 1" />
         </Typography>
       </Grid>

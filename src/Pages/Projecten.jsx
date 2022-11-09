@@ -4,15 +4,31 @@ import GIPCamping from "../Components/Projects/GIPCamping";
 import Mastermind from "../Components/Projects/Mastermind";
 import { Pagination } from "@mui/material";
 import { useMemo } from "react";
+import Arrowverse from "../Components/Projects/Arrowverse";
+import { useEffect } from "react";
 
 export default function Projecten(){
   const [pagina, setPagina] = useState(1)
   const aantalProjectenPerPagina = 3
-  const projecten = [<GIPCamping key="1" />, <Mastermind key="2" />]
+  const projecten = [<GIPCamping key="1" />, <Mastermind key="2" />, <Arrowverse key="3" />]
 
+  let repDeelPaginaTitel = document.title.substring(-1, 32)
+  useEffect(() => {
+    document.title = "Projecten - " + repDeelPaginaTitel
+  }, [repDeelPaginaTitel])
+
+  //Event meegeven anders wordt er een error gegooid in de console
   const veranderPagina = useCallback(async (event, waarde) => {
     setPagina(waarde);
   }, [pagina, setPagina])
+
+  const aantalPaginas = useMemo(() => {
+    let aantal = Math.floor(projecten.length/3)
+    if((projecten.length%3) > 0){
+      aantal++
+    }
+    return aantal
+  })
 
   const teTonenProjecten = useMemo(() => {
     let startIndex = (pagina * aantalProjectenPerPagina) - aantalProjectenPerPagina
@@ -34,7 +50,7 @@ export default function Projecten(){
       <Container className="inhoud">
         <Grid container direction="column">
           {teTonenProjecten}
-          <Pagination sx={{margin: "auto"}} count={(Math.floor(projecten.length/3)+1)} page={pagina} onChange={veranderPagina} variant="outlined"/>
+          <Pagination sx={{margin: "auto"}} count={aantalPaginas} page={pagina} onChange={veranderPagina} variant="outlined"/>
         </Grid>
       </Container>
     </>

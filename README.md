@@ -7,8 +7,8 @@ TODO:
 - ~~Homepagina~~
 - Projecten pagina
   - ~~GIP Camping~~
-  - Mastermind
-  - Arrowverse watchlist
+  - ~~Mastermind~~
+  - ~~Arrowverse watchlist~~
   - Oude E-Portfolio
   - Frontend Project
   - Webservices/backend project
