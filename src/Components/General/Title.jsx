@@ -9,5 +9,5 @@ export default function Title({icon, text}){
         <hr className="underLineTitle" />
       </Grid>
     </>
-  )
+  );
 }

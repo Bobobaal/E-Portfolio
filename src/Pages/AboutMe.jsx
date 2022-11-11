@@ -6,10 +6,9 @@ import WhoAmI from "../Components/AboutMe/WhoAmI";
 
 export default function AboutMe() {
 
-  let repDeelPaginaTitel = document.title.substring(-1, 32)
   useEffect(() => {
-    document.title = "Home - " + repDeelPaginaTitel
-  }, [repDeelPaginaTitel])
+    document.title = "Home - E-Portfolio Dieter Van Meerbeeck";
+  })
 
   return (
     <>

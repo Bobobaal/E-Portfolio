@@ -8,5 +8,5 @@ export default function Subtitle({text}){
         <hr className="underlineSubtitle" />
       </Grid>
     </>
-  )
+  );
 }

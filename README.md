@@ -9,7 +9,7 @@ TODO:
   - ~~GIP Camping~~
   - ~~Mastermind~~
   - ~~Arrowverse watchlist~~
-  - Oude E-Portfolio
+  - ~~Vorige E-Portfolio~~
   - Frontend Project
   - Webservices/backend project
   - Fluvius Projecten 2

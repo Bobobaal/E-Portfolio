@@ -11,7 +11,7 @@ export default function NavBar() {
 
   const handleClick = useCallback(async () => {
     setOpen(!open);
-  }, [setOpen, open])
+  }, [setOpen, open]);
 
   return (
     <>
@@ -77,5 +77,5 @@ export default function NavBar() {
         </List>
       </Collapse>
     </>
-  )
+  );
 }

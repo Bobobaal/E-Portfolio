@@ -6,29 +6,29 @@ import { Pagination } from "@mui/material";
 import { useMemo } from "react";
 import Arrowverse from "../Components/Projects/Arrowverse";
 import { useEffect } from "react";
+import PreviousEPortfolio from "../Components/Projects/PreviousEPortfolio";
 
-export default function Projecten(){
+export default function Projects(){
   const [pagina, setPagina] = useState(1)
   const aantalProjectenPerPagina = 3
-  const projecten = [<GIPCamping key="1" />, <Mastermind key="2" />, <Arrowverse key="3" />]
+  const projecten = [<GIPCamping key="1" />, <Mastermind key="2" />, <Arrowverse key="3" />, <PreviousEPortfolio key="4" />]
 
-  let repDeelPaginaTitel = document.title.substring(-1, 32)
   useEffect(() => {
-    document.title = "Projecten - " + repDeelPaginaTitel
-  }, [repDeelPaginaTitel])
+    document.title = "Projecten - E-Portfolio Dieter Van Meerbeeck";
+  });
 
   //Event meegeven anders wordt er een error gegooid in de console
   const veranderPagina = useCallback(async (event, waarde) => {
     setPagina(waarde);
-  }, [pagina, setPagina])
+  }, [pagina, setPagina]);
 
   const aantalPaginas = useMemo(() => {
-    let aantal = Math.floor(projecten.length/3)
-    if((projecten.length%3) > 0){
+    let aantal = Math.floor(projecten.length / 3)
+    if ((projecten.length % 3) > 0){
       aantal++
     }
     return aantal
-  })
+  });
 
   const teTonenProjecten = useMemo(() => {
     let startIndex = (pagina * aantalProjectenPerPagina) - aantalProjectenPerPagina
@@ -41,7 +41,7 @@ export default function Projecten(){
       projectenPagina.push(projecten[i]);
     }
     return projectenPagina
-  }, [pagina])
+  }, [pagina]);
 
 
 
@@ -50,9 +50,9 @@ export default function Projecten(){
       <Container className="inhoud">
         <Grid container direction="column">
           {teTonenProjecten}
-          <Pagination sx={{margin: "auto"}} count={aantalPaginas} page={pagina} onChange={veranderPagina} variant="outlined"/>
+          <Pagination sx={{ margin: "auto" }} count={aantalPaginas} page={pagina} onChange={veranderPagina} variant="outlined" />
         </Grid>
       </Container>
     </>
-  )
+  );
 }
