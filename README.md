@@ -10,8 +10,7 @@ TODO:
   - ~~Mastermind~~
   - ~~Arrowverse watchlist~~
   - ~~Vorige E-Portfolio~~
-  - Frontend Project
-  - Webservices/backend project
+  - ~~Frontend Project + Webservices/backend project~~
   - Fluvius Projecten 2
   - EWD SprintBoot project
 - CV pagina

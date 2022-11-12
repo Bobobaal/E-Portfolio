@@ -7,17 +7,19 @@ import { useMemo } from "react";
 import Arrowverse from "../Components/Projects/Arrowverse";
 import { useEffect } from "react";
 import PreviousEPortfolio from "../Components/Projects/PreviousEPortfolio";
+import FrontBackendProjects from "../Components/Projects/FrontBackendProjects";
 
 export default function Projects(){
   const [pagina, setPagina] = useState(1)
   const aantalProjectenPerPagina = 3
-  const projecten = [<GIPCamping key="1" />, <Mastermind key="2" />, <Arrowverse key="3" />, <PreviousEPortfolio key="4" />]
+  const projecten = [<GIPCamping key="1" />, <Mastermind key="2" />, <Arrowverse key="3" />, <PreviousEPortfolio key="4" />
+                    ,<FrontBackendProjects key="5" />]
 
   useEffect(() => {
     document.title = "Projecten - E-Portfolio Dieter Van Meerbeeck";
   });
 
-  //Event meegeven anders wordt er een error gegooid in de console
+  //Event meegeven anders wordt er een error gegooid in de console.
   const veranderPagina = useCallback(async (event, waarde) => {
     setPagina(waarde);
   }, [pagina, setPagina]);
@@ -49,7 +51,15 @@ export default function Projects(){
     <>
       <Container className="inhoud">
         <Grid container direction="column">
-          {teTonenProjecten}
+          {teTonenProjecten.map(project => {
+            return (
+            <>
+              <Grid item className="pageComponent">
+                {project}
+              </Grid>
+            </>
+            );
+          })}
           <Pagination sx={{ margin: "auto" }} count={aantalPaginas} page={pagina} onChange={veranderPagina} variant="outlined" />
         </Grid>
       </Container>
