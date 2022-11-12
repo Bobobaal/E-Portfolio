@@ -8,6 +8,10 @@ scripts/flow/*/.flowconfig
 _SpecRunner.html
 __benchmarks__
 build/
+dist/
+.firebase/
+.firebaserc
+firebase.json
 remote-repo/
 coverage/
 .module-cache
