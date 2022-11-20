@@ -13,6 +13,6 @@ TODO:
   - ~~Arrowverse watchlist~~
   - ~~Vorige E-Portfolio~~
   - ~~Frontend Project + Webservices/backend project~~
-  - Fluvius Projecten 2
+  - ~~Fluvius Projecten 2~~
   - EWD SprintBoot project
 - CV pagina

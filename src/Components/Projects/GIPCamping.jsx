@@ -16,7 +16,7 @@ export default function GIPCamping(){
         Dat is zodat de leerling kan bewijzen dat die zelfstandig een opdracht in hun vakgebied kan afleveren.
         Een GIP wordt beoordeeld door niet alleen leerkrachten, maar ook een externe jury die het vakgebied in praktijk uitoefenen.
       </Typography>
-      <Subtitle text="Waar ging mijn GIP over?" />
+      <Subtitle text="Onderwerp van mijn GIP:" />
       <Typography className="text">
         Mijn GIP ging over camping Le Passage en dat is een camping waar ik tijdens de vakantie verbleef in een caravan die mijn ouders daar gekocht hebben.
         Ze hebben 2 verschillende soorten plaatsen, een sta- of trekplaats en een plaats waar de vaste caravans op staan die de mensen daar gekocht hebben.

@@ -8,12 +8,13 @@ import Arrowverse from "../Components/Projects/Arrowverse";
 import { useEffect } from "react";
 import PreviousEPortfolio from "../Components/Projects/PreviousEPortfolio";
 import FrontBackendProjects from "../Components/Projects/FrontBackendProjects";
+import FluviusFrontend from "../Components/Projects/FluviusFrontend";
 
 export default function Projects(){
   const [pagina, setPagina] = useState(1)
   const aantalProjectenPerPagina = 3
   const projecten = [<GIPCamping key="1" />, <Mastermind key="2" />, <Arrowverse key="3" />, <PreviousEPortfolio key="4" />
-                    ,<FrontBackendProjects key="5" />]
+                    ,<FrontBackendProjects key="5" />, <FluviusFrontend key="6" />]
 
   useEffect(() => {
     document.title = "Projecten - E-Portfolio Dieter Van Meerbeeck";
@@ -60,7 +61,7 @@ export default function Projects(){
             </>
             );
           })}
-          <Pagination sx={{ margin: "auto" }} count={aantalPaginas} page={pagina} onChange={veranderPagina} variant="outlined" />
+          <Pagination color="primary" sx={{ margin: "auto" }} count={aantalPaginas} page={pagina} onChange={veranderPagina} />
         </Grid>
       </Container>
     </>

@@ -32,7 +32,7 @@ export default function Mastermind(){
         </ul>
         Het raden van de code gebeurt in maximaal 12 pogingen, heb je het niet geraden na 12 pogingen heb je verloren.
       </Typography>
-      <Subtitle text="Richtlijnen mastermind opdracht" />
+      <Subtitle text="Richtlijnen mastermind opdracht:" />
       <Typography component="div" className="text">
         <ul>
           <li>

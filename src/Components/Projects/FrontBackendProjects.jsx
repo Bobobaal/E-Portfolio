@@ -2,14 +2,15 @@ import Title from "../General/Title";
 import { faFilm } from "@fortawesome/free-solid-svg-icons";
 import { Typography, Link } from "@mui/material";
 import GithubLink from "../General/GithubLink";
+import Subtitle from "../General/Subtitle";
 
 export default function FrontBackendProjects(){
   return (
     <>
       <Title icon={faFilm} text="Movie watchlist" />
+      <Subtitle text="Onderwerp van dit project & de gebruikte technologieën:" />
       <Typography className="text">
-        Dit is een project gebaseerd op mijn Arrowverse watchlist project maar dan voor films. 
-        Het bestaat uit een front-end (gemaakt voor het vak front-end web development) en een backend (gemaakt voor het vak webservices). 
+        Dit is een project gebaseerd op mijn Arrowverse watchlist project maar dan voor films, het bestaat uit een front-end (gemaakt voor het vak front-end web development) en een backend (gemaakt voor het vak webservices). 
         Een groot verschil is dat dit gemaakt is om meerdere gebruikers te ondersteunen die zo hun eigen lijst hebben en het is ook niet gemaakt met gewoon wat HTML, bootstrap en 1 javascript file. <br />
         De front-end van dit project is net zoals deze website gemaakt met het React framework samen met het Material UI (<Link href="https://mui.com/" target="_blank" rel="noopener" underline="hover">MUI</Link>) component library. 
         Zoals er staat in de README op Github van de front-end ben ik eigenlijk na afloop van het project niet zo blij met hoe het eruit ziet. 
