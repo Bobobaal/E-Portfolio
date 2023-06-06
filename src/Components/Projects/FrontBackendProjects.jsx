@@ -1,8 +1,13 @@
-import Title from "../General/Title";
-import { faFilm } from "@fortawesome/free-solid-svg-icons";
+//Component library
 import { Typography, Link } from "@mui/material";
-import GithubLink from "../General/GithubLink";
+
+//Fontawesome icon
+import { faFilm } from "@fortawesome/free-solid-svg-icons";
+
+//Eigen components
+import Title from "../General/Title";
 import Subtitle from "../General/Subtitle";
+import GithubLink from "../General/GithubLink";
 
 export default function FrontBackendProjects(){
   return (

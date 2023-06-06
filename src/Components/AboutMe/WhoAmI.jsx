@@ -1,6 +1,12 @@
-import { Grid, Typography, Box } from "@mui/material";
-import { faCircleUser } from '@fortawesome/free-regular-svg-icons';
 import { useMemo } from "react";
+
+//Component library
+import { Grid, Typography, Box } from "@mui/material";
+
+//Fontawesome icon
+import { faCircleUser } from '@fortawesome/free-regular-svg-icons';
+
+//Eigen component
 import Title from '../General/Title';
 
 export default function WhoAmI() {

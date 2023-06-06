@@ -1,4 +1,7 @@
+//Component library
 import { Grid, Typography } from "@mui/material";
+
+//Fontawesome icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSquareGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 

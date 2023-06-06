@@ -1,3 +1,4 @@
+//Component library
 import { Typography, Grid } from "@mui/material"
 
 export default function Subtitle({text}){

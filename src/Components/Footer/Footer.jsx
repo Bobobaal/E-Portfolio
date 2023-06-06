@@ -1,4 +1,7 @@
+//Component library
 import { Container, Grid } from "@mui/material";
+
+//Eigen component
 import FooterLinks from "./FooterLinks";
 
 

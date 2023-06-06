@@ -1,7 +1,12 @@
-import { Grid, Typography } from "@mui/material";
+//Component library
+import { Typography } from "@mui/material";
+
+//Fontawesome icon
+import { faTent } from "@fortawesome/free-solid-svg-icons";
+
+//Eigen components
 import Title from "../General/Title";
 import Subtitle from "../General/Subtitle";
-import { faTent } from "@fortawesome/free-solid-svg-icons";
 import GithubLink from "../General/GithubLink";
 
 export default function GIPCamping(){

@@ -1,20 +1,22 @@
-import { useState, useCallback } from "react";
-import { Container, Grid, Typography } from "@mui/material";
+import { useState, useCallback, useMemo, useEffect } from "react";
+
+//Component library
+import { Container, Grid, Pagination } from "@mui/material";
+
+//Eigen components
 import GIPCamping from "../Components/Projects/GIPCamping";
 import Mastermind from "../Components/Projects/Mastermind";
-import { Pagination } from "@mui/material";
-import { useMemo } from "react";
 import Arrowverse from "../Components/Projects/Arrowverse";
-import { useEffect } from "react";
 import PreviousEPortfolio from "../Components/Projects/PreviousEPortfolio";
 import FrontBackendProjects from "../Components/Projects/FrontBackendProjects";
 import FluviusFrontend from "../Components/Projects/FluviusFrontend";
+import EWDSpringBoot from "../Components/Projects/EWDSpringBoot";
 
 export default function Projects(){
   const [pagina, setPagina] = useState(1)
   const aantalProjectenPerPagina = 3
   const projecten = [<GIPCamping key="1" />, <Mastermind key="2" />, <Arrowverse key="3" />, <PreviousEPortfolio key="4" />
-                    ,<FrontBackendProjects key="5" />, <FluviusFrontend key="6" />]
+                    ,<FrontBackendProjects key="5" />, <FluviusFrontend key="6" />, <EWDSpringBoot key="6" />]
 
   useEffect(() => {
     document.title = "Projecten - E-Portfolio Dieter Van Meerbeeck";

@@ -1,9 +1,11 @@
+import { useCallback, useState } from "react";
+
+//Component library
 import { Menu as MenuIcon } from "@mui/icons-material";
 import {
   AppBar, Toolbar, Box, IconButton, Stack,
   Typography, List, ListItemIcon, ListItemText, ListItemButton, Collapse, Container
 } from "@mui/material";
-import { useCallback, useState } from "react";
 
 export default function NavBar() {
 
@@ -29,7 +31,7 @@ export default function NavBar() {
                   Projecten
                 </ListItemText>
               </ListItemButton>
-              <ListItemButton className="navBar-listItem">
+              <ListItemButton className="navBar-listItem" component="a" href="./CV">
                 <ListItemText>
                   CV
                 </ListItemText>
@@ -71,7 +73,7 @@ export default function NavBar() {
           <ListItemButton className="mobileNav-listItem" component="a" href="./projecten">
             <ListItemText>Projecten</ListItemText>
           </ListItemButton>
-          <ListItemButton className="mobileNav-listItem">
+          <ListItemButton className="mobileNav-listItem" component="a" href="./CV">
             <ListItemText>CV</ListItemText>
           </ListItemButton>
         </List>

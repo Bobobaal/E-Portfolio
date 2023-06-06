@@ -1,8 +1,13 @@
+//Component library
+import { Typography } from "@mui/material";
+
+//Fontawesome icon
+import { faPlugCircleBolt } from "@fortawesome/free-solid-svg-icons";
+
+//Eigen components
 import Title from "../General/Title";
 import Subtitle from "../General/Subtitle";
 import GithubLink from "../General/GithubLink";
-import { faPlugCircleBolt } from "@fortawesome/free-solid-svg-icons";
-import { Typography } from "@mui/material";
 
 export default function FluviusFrontend(){
   return (

@@ -1,6 +1,11 @@
-import Title from "../General/Title";
+//Component library
+import { Typography, Link } from "@mui/material";
+
+//Fontawesome icon
 import { faArrowPointer } from "@fortawesome/free-solid-svg-icons";
-import { Grid, Typography, Link } from "@mui/material";
+
+//Eigen components
+import Title from "../General/Title";
 import Subtitle from "../General/Subtitle";
 
 export default function Arrowverse(){

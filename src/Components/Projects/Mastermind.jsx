@@ -1,5 +1,10 @@
-import { Grid, Typography } from "@mui/material";
+//Component library
+import { Typography } from "@mui/material";
+
+//Fontawesome icon
 import { faPuzzlePiece } from "@fortawesome/free-solid-svg-icons";
+
+//Eigen components
 import Title from "../General/Title";
 import Subtitle from "../General/Subtitle";
 import GithubLink from "../General/GithubLink";

@@ -1,4 +1,7 @@
-import { Grid, Typography } from "@mui/material";
+//Component library
+import { Typography } from "@mui/material";
+
+//Fontawesome icon
 import { faFile } from "@fortawesome/free-solid-svg-icons";
 
 //Eigen components

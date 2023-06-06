@@ -1,5 +1,10 @@
+//Component library
 import { Grid, Typography } from "@mui/material"
+
+//Fontawesome icon
 import { faUserGraduate } from '@fortawesome/free-solid-svg-icons';
+
+//Eigen component
 import Title from '../General/Title';
 
 export default function Education(){
