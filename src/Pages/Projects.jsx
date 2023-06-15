@@ -16,7 +16,7 @@ export default function Projects(){
   const [pagina, setPagina] = useState(1)
   const aantalProjectenPerPagina = 3
   const projecten = [<GIPCamping key="1" />, <Mastermind key="2" />, <Arrowverse key="3" />, <PreviousEPortfolio key="4" />
-                    ,<FrontBackendProjects key="5" />, <FluviusFrontend key="6" />, <EWDSpringBoot key="6" />]
+                    ,<FrontBackendProjects key="5" />, <FluviusFrontend key="6" />, <EWDSpringBoot key="7" />]
 
   useEffect(() => {
     document.title = "Projecten - E-Portfolio Dieter Van Meerbeeck";
@@ -56,11 +56,7 @@ export default function Projects(){
         <Grid container direction="column">
           {teTonenProjecten.map(project => {
             return (
-            <>
-              <Grid item className="pageComponent">
-                {project}
-              </Grid>
-            </>
+              project
             );
           })}
           <Pagination color="primary" sx={{ margin: "auto" }} count={aantalPaginas} page={pagina} onChange={veranderPagina} />
